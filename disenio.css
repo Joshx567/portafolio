@@ -81,10 +81,11 @@ img{
     margin:auto;
     box-sizing: border-box;
     height: auto;
-}
+    justify-content: center;
+    display: block;
+     align-items: center;
+     margin: auto;
 
-nav{
-    text-align: right;
 }
 
 hr {
@@ -233,13 +234,7 @@ p{
     width: 100%;
     background-color: rgb(64, 64, 64);
     align-items: center;
-    padding: 5%;
-}
-
-@media screen and (max-width: 450px){
-    .flex-main{
-        flex-direction: column;
-    }
+    padding: 40px 0;
 }
 
 .footer-content{
@@ -252,18 +247,45 @@ p{
 }
 
 .links{
-    width: 20vw;
-    height: 20vh;
-   
+    width: 150px;
+    height: 150px;
+    margin: 2px 20px 20px 2px;
+    box-sizing: border-box;;
 }
 
 .parrafo{
-    margin: 0 1.5em 2em;
+    margin: auto;
     background-color: #eee;
-    padding: 1.5em;
-    font-size: .9em;
-    border-radius: 1em;
+    height: 500px;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 1px;
 }
+
+.imageParagraft{
+    width: 50%;
+    float: left;
+    display: block;
+    position: absolute;
+}
+
+.texto{
+    margin-right: 200px;
+    margin-top: 50px;
+    width:40%;
+    text-align: justify;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 1rem 1rem 1rem;
+    width: 40%;
+    float: right;
+    border: 2px solid black;
+    border-radius: 10px;
+    float: right;
+    background-color: gray;
+}
+
 
 video{
     text-align: center;
@@ -273,4 +295,24 @@ video{
     box-sizing: border-box;
     height: auto;
     position: relative;
+}
+
+.lenguajes{
+    float: left;
+    background-color: gray;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.lenguajes img{
+    width: 200px !important;
+    height: 200px !important;
+    float: left;
+    flex-direction: column;
+    align-items: center;
+    display:block;
+    box-sizing: border-box;
+    margin:auto;
+    margin: 1rem;
 }
